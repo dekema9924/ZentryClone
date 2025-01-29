@@ -1,4 +1,67 @@
 @import "tailwindcss";
-@import "tailwindcss/utilities";
 
+
+
+
+
+@font-face {
+    font-family: 'zentry-regular';
+    src: url(././public/fonts/zentry-regular.woff2) format('woff2');
+  
+}
+
+@font-face{
+    font-family: 'circularweb-book';
+    src: url(././public/fonts/circularweb-book.woff2) format('woff2');
+    
+}
+
+
+@font-face {
+    font-family:'general';
+    src: url(././public//fonts/general.woff2)format('woff2');
+
+}
+
+@font-face{
+    font-family: 'robert-medium';
+    src: url(././public/fonts/robert-medium.woff2)format('woff2');
+   
+}
+@font-face {
+    font-family:'regular';
+    src: url(././public/fonts/robert-regular.woff2) format('woff2');
+}
+
+
+
+
+@layer base {
+    *{
+        font-family: 'regular', sans-serif;
+    }
+
+    .--cursor{
+        @apply cursor-pointer
+    }
+    .--zentryFont{
+        font-family: 'zentry-regular', sans-serif;
+    }
+
+    .robertFont{
+        font-family: 'robert-medium';
+    }
+    .clipPath{
+        clip-path: polygon(0,0, 100%, 0 , 100%, 100% 0, 100%);
+    }
+    .absolute-center{
+        @apply absolute top-1/2 left-1/2 translate-x-[50%] translate-y-[50%] 
+    }
+   
+   
+}
+
+
+
+/* mediaQuerries */
 
