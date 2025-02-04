@@ -7,61 +7,171 @@
 @font-face {
     font-family: 'zentry-regular';
     src: url(././public/fonts/zentry-regular.woff2) format('woff2');
-  
+
 }
 
-@font-face{
+@font-face {
     font-family: 'circularweb-book';
     src: url(././public/fonts/circularweb-book.woff2) format('woff2');
-    
+
 }
 
 
 @font-face {
-    font-family:'general';
+    font-family: 'general';
     src: url(././public//fonts/general.woff2)format('woff2');
 
 }
 
-@font-face{
+@font-face {
     font-family: 'robert-medium';
     src: url(././public/fonts/robert-medium.woff2)format('woff2');
-   
+
 }
+
 @font-face {
-    font-family:'regular';
+    font-family: 'regular';
     src: url(././public/fonts/robert-regular.woff2) format('woff2');
 }
+
+
+@layer components {
+    .transformDiv {
+        transform: perspective(500px) rotateY(25deg) rotateX(10deg) scale(0.9) rotateX(10deg);
+        transition: 0.6s ease all;
+        border-radius: 10px;
+  
+    }
+    .numberElement::before {
+        content: "01";
+        font-family: 'general';
+        font-size: x-small;
+        font-weight: 700;
+        padding-right: 40px;
+        padding-left: 5px;
+        
+    }
+    .clip-path-style{
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 39% 50%, 0% 0%);
+
+    }
+
+    .card {
+    
+        perspective: 1000px; /* This gives depth for the 3D effect */
+        transition: transform 0.2s ease;
+        transform-style: preserve-3d;
+        transition: transform 0.1s ease-out;
+    }
+
+    .card-content { 
+        border-radius: 10px;
+        transition: transform 0.2s ease;
+    }
+}
+
 
 
 
 
 @layer base {
-    *{
+    * {
         font-family: 'regular', sans-serif;
     }
 
-    .--cursor{
+    body {
+        @apply bg-blue-100
+    }
+
+    .--cursor {
         @apply cursor-pointer
     }
-    .--zentryFont{
+
+    .--zentryFont {
         font-family: 'zentry-regular', sans-serif;
     }
 
-    .robertFont{
+    .robertFont {
         font-family: 'robert-medium';
     }
-    .clipPath{
-        clip-path: polygon(0,0, 100%, 0 , 100%, 100% 0, 100%);
+    .generalFont{
+        font-family: 'general';
     }
-    .absolute-center{
-        @apply absolute top-1/2 left-1/2 translate-x-[50%] translate-y-[50%] 
+
+    .clipPath {
+        clip-path: polygon(0, 0, 100%, 0, 100%, 100% 0, 100%);
     }
+
+    .absolute-center {
+        @apply absolute top-1/2 left-1/2 translate-x-[50%] translate-y-[50%]
+    }
+
+    .scroll-Animation {
+        animation: scrollAnimation linear;
+        animation-timeline: scroll(block);
+        animation-range: (100% - 10px);
+    }
+
+    .fullScreen-worldAnimation {
+        animation: fullScreenAnimation both .7s;
+        animation-timeline: view(60% 70%);
+        
+    }
+
+    .typewritter-Animation {
+        animation: Typewritter;
+        animation-timeline: view();
+
+    }
+    .YellowBg-Animation {
+        animation: ChangeBgAnimation .3s ;
+        animation-timeline: scroll();      
+    }
+  
+
+
+
+
+
+
+
+    @keyframes scrollAnimation {
+        15% {
+            clip-path: polygon(6% 5%, 94% 5%, 100% 100%, 0% 100%);
+            scale: .71;
+        }
+      
+
+        100% {
+            clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+            scale: .1;
+        }
+    }
+
+    @keyframes fullScreenAnimation {
    
-   
+        to {
+            width: 100vw;
+            height: 100%;
+            border-radius: 0;
+        }
+    }
+
+    @keyframes Typewritter {
+        from {
+            width: 0px;
+
+            opacity: 0;
+
+        }
+
+        to {
+            opacity: 1;
+            width: 100%;
+        }
+    }
+
+
+
+
 }
-
-
-
-/* mediaQuerries */
-
