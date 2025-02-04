@@ -98,6 +98,11 @@
         font-family: 'general';
     }
 
+    .navbar::before{
+        font-family: 'general';
+        font-weight: 900;
+    }
+
     .clipPath {
         clip-path: polygon(0, 0, 100%, 0, 100%, 100% 0, 100%);
     }
@@ -114,8 +119,7 @@
 
     .fullScreen-worldAnimation {
         animation: fullScreenAnimation both .7s;
-        animation-timeline: view(60% 70%);
-        
+        animation-timeline: view(60% 70%); 
     }
 
     .typewritter-Animation {
