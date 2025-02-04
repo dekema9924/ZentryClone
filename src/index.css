@@ -131,6 +131,13 @@
         animation: ChangeBgAnimation .3s ;
         animation-timeline: scroll();      
     }
+    video::-webkit-media-controls {
+        display: none;
+      }
+      video::-moz-media-controls {
+        display: none;
+      }
+      
   
 
 
