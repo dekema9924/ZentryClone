@@ -1,6 +1,6 @@
 import gallery2 from '../public/img/gallery-2.webp'
 import gallery3 from '../public/img/gallery-3.webp'
-import Contact from './contact'
+import Contact from './Contact'
 
 
 

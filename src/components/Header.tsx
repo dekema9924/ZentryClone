@@ -1,4 +1,3 @@
-// This is the header component
 import { useEffect, useState } from 'react'
 import gamePad from '../public/icons/gamepad.png'
 
@@ -28,8 +27,8 @@ function Header() {
                         <li className='--cursor'>contact</li>
                     </ul>
                     <div style={{color: isOpen ? "black" : "white"}} onClick={()=>setOpen(!isOpen)} className='cursor-pointer  w-10 lg:hidden mr-2 lg:mr-0'>
-                        <span className='w-11/12 h-2 border-t-2 block'></span>
-                        <span className='w-11/12 h-2 border-t-2  block'></span>
+                        <span style={{rotate: isOpen ? "40deg": ""}} className='transition-all duration-500 w-11/12 h-2 border-t-2 block'></span>
+                        <span style={{rotate: isOpen ? "-40deg": ""}} className=' transition-all duration-500 w-11/12  h-2 border-t-2  block'></span>
                     </div>
                 </div>
                 <div style={{height: isOpen ? "100vh" : "0px", backgroundColor: isOpen ? "#fff085" : "transparent"}} className='navbar lg:hidden absolute pt-20 text-[3em] top-0 bg-yellow-200 text-black overflow-hidden transition-all duration-700 w-full h-[100vh] -z-1 '>

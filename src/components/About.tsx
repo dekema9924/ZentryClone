@@ -5,12 +5,11 @@ import zimaVideo from '../public/videos/feature-2.mp4'
 import nexus from '../public/videos/feature-3.mp4'
 import azulVidep from '../public/videos/feature-4.mp4'
 import Feature5 from '../public/videos/feature-5.mp4'
-import React, { useState, useRef } from 'react';
+import React, { useRef } from 'react';
 
 
 
 function CardWorld() {
-  const [isPlaying, setIsPlaying] = useState(false);
   const nexusRef = useRef<HTMLVideoElement>(null);
   const azulRef = useRef<HTMLVideoElement>(null);
   const radiantRef = useRef<HTMLVideoElement>(null);

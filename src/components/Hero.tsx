@@ -40,6 +40,7 @@ function Hero() {
     }
     const HandleVideoLoad = () => {
         setLoadedVideo((prev) => prev + 1)
+        console.log(loadedVideo)
     }
 
 

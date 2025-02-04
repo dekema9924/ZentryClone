@@ -1,4 +1,3 @@
-import React from 'react'
 import contact1 from '../public/img/contact-1.webp'
 import contact2 from '../public/img/contact-2.webp'
 import swordsman from '../public/img/swordman.webp'
