@@ -90,7 +90,7 @@ function Hero() {
 
     return (
         <>
-            <section className='scroll-Animation h-[100vh] capitalize overflow-hidden relative border-2 '>
+            <section className='scroll-Animation h-[100vh] capitalize lg:overflow-hidden relative border-2 '>
                 <div className='absolute top-14 text-white ml-10 flex lg:block flex-col gap-20 lg:gap-0 z-24 h-80 '>
                     <h1 className='--zentryFont lg:text-[8em] text-[7em] text-blue-100'>Redifine</h1>
                     <div className='flex lg:block justify-between mt-64 lg:mt-0 lg:w-[450px] '>
@@ -98,7 +98,7 @@ function Hero() {
                         <button className='capitalize cursor-pointer my-4 flex items-center justify-center w-42 rounded-2xl bg-yellow-200 text-black text-xs h-8 font-bold'> <NearMeIcon className='p-1' /> watch trailer</button>
                     </div>
                 </div>
-                <div className='absolute w-44  h-44 top-1/3 left-1/3 lg:left-1/2 cursor-pointer overflow-hidden rounded-lg z-50 '>
+                <div className='absolute w-44  h-44 top-1/3 left-1/3 lg:left-1/2 cursor-pointer lg:overflow-hidden rounded-lg z-50 '>
                     <div onLoadedData={HandleVideoLoad}
                         onClick={HandlesmallVideoClick} className='scale-50  transition-all ease-in duration-75 hover:scale-100 hover:animate-none opacity-100 hover:opacity-100 relative rounded-2xl' >
                         <video
