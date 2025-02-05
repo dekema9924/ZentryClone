@@ -60,7 +60,7 @@ function CardWorld() {
 
         <div className='w-11/12 m-auto mt-34 '>
           {/* radiant */}
-          <div onMouseEnter={() => handleMouseEnter(radiantRef)} onMouseLeave={() => handleMouseLeave(radiantRef)} className="my-10 hover:scale-95 transition-all duration-500 w-11/12 col-span-2 border-[.1px] m-auto border-gray-400  cursor-grab rounded-2xl h-96 relative z-40 p-4 overflow-hidden ">
+          <div onMouseEnter={() => handleMouseEnter(radiantRef)} onMouseLeave={() => handleMouseLeave(radiantRef)} className="pop-animation my-10 hover:scale-95 transition-all duration-500 w-11/12 col-span-2 border-[.1px] m-auto border-gray-400  cursor-grab rounded-2xl h-96 relative z-40 p-4 overflow-hidden ">
             <video
               ref={radiantRef}
               className='w-11/12 h-11/12 absolute -z-1 scale-150'
@@ -73,9 +73,9 @@ function CardWorld() {
           </div>
 
 
-          <div className='flex gap-10 flex-wrap lg:flex-nowrap lg:w-11/12 m-auto w-full '>
+          <div className='pop-animation flex gap-10 flex-wrap lg:flex-nowrap lg:w-11/12 m-auto w-full '>
             {/* zigma */}
-            <div onMouseEnter={() => handleMouseEnter(zimaRef)} onMouseLeave={() => handleMouseLeave(zimaRef)} className="hover:scale-95 transition-all duration-500 border-[.1px] cursor-grab overflow-hidden w-11/12 h-[600px]  border-gray-400 rounded-2xl relative z-40 p-4  shadow-2xl ">
+            <div onMouseEnter={() => handleMouseEnter(zimaRef)} onMouseLeave={() => handleMouseLeave(zimaRef)} className="pop-animation delay-75 hover:scale-95 transition-all duration-500 border-[.1px] cursor-grab overflow-hidden w-11/12 h-[600px]  border-gray-400 rounded-2xl relative z-40 p-4  shadow-2xl ">
               <video
                 ref={zimaRef}
                 className=' absolute -z-1 w-11/12 rounded-4xl h-[600px] scale-150 '
@@ -91,7 +91,7 @@ function CardWorld() {
 
             <div className='flex flex-col gap-10'>
               {/* nexus */}
-              <div onMouseEnter={() => handleMouseEnter(nexusRef)} onMouseLeave={() => handleMouseLeave(nexusRef)} className="hover:scale-95 transition-all duration-500 cursor-grab border-[.1px] lg:w-[520px]  h-[280px] overflow-hidden  border-gray-400 rounded-2xl relative z-40 p-4  shadow-2xl ">
+              <div onMouseEnter={() => handleMouseEnter(nexusRef)} onMouseLeave={() => handleMouseLeave(nexusRef)} className="pop-animation hover:scale-95 transition-all duration-500 cursor-grab border-[.1px] lg:w-[520px]  h-[280px] overflow-hidden  border-gray-400 rounded-2xl relative z-40 p-4  shadow-2xl ">
                 <video
                   ref={nexusRef}
                   className='w-11/12 h-11/12 absolute -z-1 scale-150 '
@@ -108,7 +108,7 @@ function CardWorld() {
               </div>
 
               {/* azul */}
-              <div onMouseEnter={() => handleMouseEnter(azulRef)} onMouseLeave={() => handleMouseLeave(azulRef)} className="hover:scale-95 transition-all duration-500 cursor-grab border-[.1px] w-80 lg:w-[520px] h-[280px] overflow-hidden  border-gray-400 rounded-2xl relative z-40 p-4  shadow-2xl ">
+              <div onMouseEnter={() => handleMouseEnter(azulRef)} onMouseLeave={() => handleMouseLeave(azulRef)} className="pop-animation hover:scale-95 transition-all duration-500 cursor-grab border-[.1px] w-80 lg:w-[520px] h-[280px] overflow-hidden  border-gray-400 rounded-2xl relative z-40 p-4  shadow-2xl ">
                 <video
                   ref={azulRef}
                   className='w-11/12 h-11/12 absolute -z-1 scale-150  '
@@ -124,14 +124,14 @@ function CardWorld() {
             </div>
 
           </div>
-          <div className='flex flex-wrap-reverse lg:flex-nowrap gap-10 lg:my-10 m-auto w-11/12 pb-10'>
+          <div className=' flex flex-wrap-reverse lg:flex-nowrap gap-10 lg:my-10 m-auto w-11/12 pb-10'>
             {/* comingSoon card */}
-            <div className=" cursor-grab bg-[#3d27c8]  w-11/12 h-[295px]  rounded-2xl p-4 ">
+            <div className=" pop-animation cursor-grab bg-[#3d27c8]  w-11/12 h-[295px]  rounded-2xl p-4 ">
               <p className='--zentryFont text-[3em] lg:w-80 text-black'>More Coming Soon.</p>
             </div>
 
             {/* feauture5 cardVideo */}
-            <div className="w-11/12 cursor-grab lg:h-[295px] rounded-2xl overflow-hidden ">
+            <div className="pop-animation w-11/12 cursor-grab lg:h-[295px] rounded-2xl overflow-hidden ">
               <video
                 autoPlay
                 loop
