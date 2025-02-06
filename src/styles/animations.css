@@ -15,13 +15,13 @@
 
     .scroll-Animation {
         animation: scrollAnimation linear both;
-        animation-timeline: scroll();
-        /* animation-range: (100% - 10px); */
+        animation-timeline: scroll(block);
+        animation-range: (100% - 10px);
     }
 
     .fullScreen-worldAnimation {
         animation: fullScreenAnimation  both;
-        animation-timeline: view(); 
+        animation-timeline: view(60% 70%); 
     }
 
     .typewritter-Animation {
@@ -29,12 +29,15 @@
         animation-timeline: view();
 
     }
-
+    .YellowBg-Animation {
+        animation: ChangeBgAnimation .3s ;
+        animation-timeline: scroll();      
+    }
 
     .pop-animation{
         animation: popout both ;
         transition: all .7s;
-        animation-timeline: view();
+        animation-timeline: view(70% 5%);
     }
 
     .transformDiv {
